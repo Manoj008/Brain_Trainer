@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#80cbc4"
+    android:layout_height="match_parent"
+    tools:context="com.first.manoj.braintrainer.welcomeScreen">
+
+
+    <ImageView
+        android:id="@+id/addd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/text"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="202dp"
+        app:srcCompat="@drawable/addd" />
+
+    <ImageView
+        android:id="@+id/subb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/addd"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/addd"
+        app:srcCompat="@drawable/subbb" />
+
+    <ImageView
+        android:id="@+id/mull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addd"
+        android:layout_below="@+id/addd"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@drawable/multtt" />
+
+    <ImageView
+        android:id="@+id/divv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/subb"
+        android:layout_alignTop="@+id/mull"
+        app:srcCompat="@drawable/divvv" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/subb"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:text="BRAIN TRAINER"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/manoj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="19dp"
+        android:layout_marginRight="21dp"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:text="Developed by  MANOJ YADAV" />
+</RelativeLayout>

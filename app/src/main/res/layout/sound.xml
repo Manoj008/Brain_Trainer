@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true"
+        android:elevation="2dp"
+        android:background="@drawable/closedialog" />
+    <LinearLayout
+        android:padding="5dp"
+        android:id="@+id/soundlayout"
+        android:background="#607d8b"
+        android:weightSum="28"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:text="MENU"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="6"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="23"
+            android:weightSum="20">
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <Button
+                    android:id="@+id/music_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/music_button" />
+
+                <TextView
+                    android:id="@+id/music_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="MUSIC"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4" />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <Button
+                    android:id="@+id/sound_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/sound_button" />
+
+                <TextView
+                    android:id="@+id/sound_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="SOUND"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="6"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

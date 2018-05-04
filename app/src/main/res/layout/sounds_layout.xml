@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true"
+        android:elevation="2dp"
+        android:background="@drawable/closedialog" />
+   <LinearLayout
+       android:padding="5dp"
+       android:id="@+id/soundlayout"
+       android:background="#607d8b"
+       android:weightSum="26"
+       android:orientation="vertical"
+       android:layout_gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="350dp">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_weight="1"
+           android:background="#fff"
+           android:text="MENU"
+           android:textColor="#000"
+           android:gravity="center"
+           android:textSize="20dp"/>
+       <Space
+           android:layout_width="match_parent"
+           android:layout_height="20dp" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_weight="11"
+           android:weightSum="20">
+           <Space
+               android:layout_width="1dp"
+               android:layout_height="match_parent"
+               android:layout_weight="3"/>
+            <LinearLayout
+               android:layout_width="1dp"
+               android:layout_weight="5"
+                android:weightSum="5"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/music_button"
+                    android:background="@drawable/music_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="3.5"/>
+                <TextView
+                    android:gravity="center"
+                    android:text="MUSIC"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:id="@+id/music_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1.5"/>
+           </LinearLayout>
+
+           <Space
+               android:layout_width="1dp"
+               android:layout_height="match_parent"
+               android:layout_weight="4"/>
+
+            <LinearLayout
+               android:layout_width="1dp"
+               android:layout_weight="5"
+                android:weightSum="5"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/sound_button"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/sound_button"
+                    android:layout_height="1dp"
+                    android:layout_weight="3.5"/>
+                <TextView
+                    android:id="@+id/sound_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:gravity="center"
+                    android:text="SOUND"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:layout_weight="1.5"/>
+           </LinearLayout>
+
+           <Space
+               android:layout_width="1dp"
+               android:layout_height="match_parent"
+               android:layout_weight="3"/>
+
+       </LinearLayout>
+       <Space
+           android:layout_width="match_parent"
+           android:layout_height="50dp" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_weight="11"
+           android:weightSum="20">
+           <LinearLayout
+               android:layout_width="1dp"
+               android:layout_weight="5"
+               android:weightSum="6"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+               <Button
+                   android:id="@+id/main_menu_button"
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_weight="3"
+                   android:background="@android:drawable/ic_menu_agenda" />
+               <TextView
+                   android:gravity="center"
+                   android:text="MAIN MENU"
+                   android:textSize="18dp"
+                   android:textColor="#fff"
+                   android:id="@+id/main_menu_text"
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_weight="3"/>
+           </LinearLayout>
+           <LinearLayout
+
+               android:layout_width="1dp"
+               android:layout_weight="5"
+               android:weightSum="6"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+               <Button
+                   android:id="@+id/game_menu_button"
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_weight="3"
+                   android:background="@android:drawable/ic_menu_revert" />
+               <TextView
+                   android:id="@+id/game_menu_text"
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_weight="3"
+                   android:gravity="center"
+                   android:text="GAME MENU"
+                   android:textSize="18dp"
+                   android:textColor="#fff"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="1dp"
+               android:layout_weight="5"
+               android:weightSum="6"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+               <Button
+                   android:id="@+id/restart_button"
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_weight="3"
+                   android:background="@android:drawable/ic_menu_rotate" />
+               <TextView
+                   android:id="@+id/restart_text"
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_weight="3"
+                   android:gravity="center"
+                   android:text="RESTART"
+                   android:textSize="16dp"
+                   android:textColor="#fff"/>
+           </LinearLayout>
+
+           <LinearLayout
+
+               android:layout_width="1dp"
+               android:layout_weight="6"
+               android:weightSum="6"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+               <Button
+                   android:id="@+id/resume_button"
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_weight="3"
+                   android:background="@android:drawable/ic_media_play"
+                   android:backgroundTint="#cfd8dc"/>
+               <TextView
+                   android:id="@+id/resume_text"
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_weight="3"
+                   android:gravity="center"
+                   android:text="RESUME"
+                   android:textSize="16dp"
+                   android:textColor="#fff"/>
+           </LinearLayout>
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+</RelativeLayout>
